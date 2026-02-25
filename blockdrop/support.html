@@ -1,196 +1,25 @@
-<!DOCTYPE html>
-<html class="dark" lang="ja">
+<!doctype html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>BlockDrop Support</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#135bec",
-            "background-light": "#f6f6f8",
-            "background-dark": "#101622",
-          },
-          fontFamily: {
-            display: ["Inter", "sans-serif"],
-            jp: ["Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Meiryo", "sans-serif"]
-          },
-          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-        },
-      },
-    }
-  </script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlockDrop サポート</title>
 </head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP',sans-serif;max-width:820px;margin:40px auto;padding:0 16px;line-height:1.7;">
+  <h1>BlockDrop サポート</h1>
 
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased min-h-screen flex flex-col">
-  <div class="flex flex-col min-h-screen">
-    <header class="w-full border-b border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-10">
-      <div class="max-w-[960px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="size-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
-            <span class="material-symbols-outlined !text-[20px]">support_agent</span>
-          </div>
-          <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">BlockDrop Support</h2>
-        </div>
-      </div>
-    </header>
+  <h2>お問い合わせ</h2>
+  <p>メール：<a href="mailto:app.supp.x1xkittlsig0x8@gmail.com">app.supp.x1xkittlsig0x8@gmail.com</a></p>
 
-    <main class="flex-grow flex flex-col items-center py-10 px-4 sm:px-6">
-      <div class="w-full max-w-[720px] space-y-10">
+  <h2>不具合報告の際に教えてほしい情報</h2>
+  <ul>
+    <li>端末機種 / iOSバージョン</li>
+    <li>アプリバージョン（例：1.0.0）</li>
+    <li>発生した内容（できれば再現手順）</li>
+    <li>スクリーンショット（可能なら）</li>
+  </ul>
 
-        <!-- JP: Contact -->
-        <section class="text-center space-y-4 font-jp" lang="ja">
-          <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 dark:text-white">お問い合わせ</h1>
-          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-lg mx-auto">
-            BlockDropに関するお問い合わせは、以下のメールアドレスまでご連絡ください。
-          </p>
-
-          <div class="mt-6 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
-            <p class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Email</p>
-            <p class="text-lg sm:text-xl font-medium text-slate-900 dark:text-white mt-1 break-all">
-              app.supp.x1xkittlsig0x8@gmail.com
-            </p>
-
-            <!-- ボタンは任意：不要ならこの <a> を消してOK -->
-            <div class="mt-4">
-            </div>
-          </div>
-        </section>
-
-        <!-- JP: What to include -->
-        <section class="space-y-4 font-jp" lang="ja">
-          <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
-            <span class="material-symbols-outlined text-primary">bug_report</span>
-            <h2 class="text-xl font-bold text-slate-900 dark:text-white">不具合報告の際に記載してほしい情報</h2>
-          </div>
-
-          <div class="bg-white dark:bg-slate-900/50 rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
-            <ul class="space-y-4">
-              <li class="flex items-start gap-3">
-                <div class="mt-1 size-5 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
-                  <span class="material-symbols-outlined !text-[14px] font-bold">check</span>
-                </div>
-                <div>
-                  <span class="block font-semibold text-slate-900 dark:text-slate-100">端末機種 / iOSバージョン</span>
-                  <span class="text-sm text-slate-500 dark:text-slate-400">例：iPhone 16 / iOS 26.2</span>
-                </div>
-              </li>
-
-              <li class="flex items-start gap-3">
-                <div class="mt-1 size-5 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
-                  <span class="material-symbols-outlined !text-[14px] font-bold">check</span>
-                </div>
-                <div>
-                  <span class="block font-semibold text-slate-900 dark:text-slate-100">アプリバージョン</span>
-                  <span class="text-sm text-slate-500 dark:text-slate-400">例：1.0.0（TestFlight/App Storeの表示でOK）</span>
-                </div>
-              </li>
-
-              <li class="flex items-start gap-3">
-                <div class="mt-1 size-5 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
-                  <span class="material-symbols-outlined !text-[14px] font-bold">check</span>
-                </div>
-                <div>
-                  <span class="block font-semibold text-slate-900 dark:text-slate-100">内容 / 再現手順</span>
-                  <span class="text-sm text-slate-500 dark:text-slate-400">何が起きたか、どうすると起きるか</span>
-                </div>
-              </li>
-
-              <li class="flex items-start gap-3">
-                <div class="mt-1 size-5 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
-                  <span class="material-symbols-outlined !text-[14px] font-bold">check</span>
-                </div>
-                <div>
-                  <span class="block font-semibold text-slate-900 dark:text-slate-100">スクリーンショット（任意）</span>
-                  <span class="text-sm text-slate-500 dark:text-slate-400">あると調査が早くなります</span>
-                </div>
-              </li>
-            </ul>
-
-            <div class="mt-6 text-sm text-slate-500 dark:text-slate-400">
-              <p>※まずは端末の再起動・アプリの再インストールもお試しください。</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Divider -->
-        <div class="relative w-full py-6">
-          <div aria-hidden="true" class="absolute inset-0 flex items-center">
-            <div class="w-full border-t border-slate-200 dark:border-slate-800"></div>
-          </div>
-          <div class="relative flex justify-center">
-            <span class="bg-background-light dark:bg-background-dark px-2 text-slate-400">
-              <span class="material-symbols-outlined">translate</span>
-            </span>
-          </div>
-        </div>
-
-        <!-- EN -->
-        <section class="text-center space-y-4" lang="en">
-          <h1 class="text-3xl sm:text-4xl font-black tracking-tight text-slate-900 dark:text-white">Contact</h1>
-          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-lg mx-auto">
-            For support inquiries about BlockDrop, please contact:
-          </p>
-
-          <div class="mt-6 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
-            <p class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Email</p>
-            <p class="text-lg sm:text-xl font-medium text-slate-900 dark:text-white mt-1 break-all">
-              app.supp.x1xkittlsig0x8@gmail.com
-            </p>
-
-            <div class="mt-4">
-              <a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-white font-semibold hover:bg-blue-600 active:bg-blue-700 transition-colors shadow-lg shadow-primary/20 w-full sm:w-auto"
-                 href="mailto:app.supp.x1xkittlsig0x8@gmail.com">
-                <span>Send email</span>
-                <span class="material-symbols-outlined !text-[20px]">arrow_forward</span>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section class="space-y-4" lang="en">
-          <div class="flex items-center gap-2 border-b border-slate-200 dark:border-slate-800 pb-3">
-            <span class="material-symbols-outlined text-primary">checklist</span>
-            <h2 class="text-xl font-bold text-slate-900 dark:text-white">Please include</h2>
-          </div>
-
-          <div class="bg-white dark:bg-slate-900/50 rounded-xl p-6 md:p-8 border border-slate-200 dark:border-slate-800">
-            <ul class="space-y-3 text-slate-600 dark:text-slate-300">
-              <li>• Device model & iOS version</li>
-              <li>• App version (e.g., 1.0.0)</li>
-              <li>• Issue description & steps to reproduce</li>
-              <li>• Screenshot (optional)</li>
-            </ul>
-            <p class="mt-6 text-sm text-slate-500 dark:text-slate-400">
-              Tip: Try restarting the device or reinstalling the app first.
-            </p>
-          </div>
-        </section>
-
-      </div>
-    </main>
-
-    <footer class="w-full py-8 text-center border-t border-slate-200 dark:border-slate-800 mt-auto">
-      <div class="max-w-[960px] mx-auto px-4">
-        <p class="text-xs font-medium text-slate-400 dark:text-slate-600">
-          Last updated: 2026-02-26
-        </p>
-        <p class="text-xs text-slate-300 dark:text-slate-700 mt-2">
-          © 2026 BlockDrop. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  </div>
+  <p><a href="../index.html">← 戻る</a></p>
+  <p style="color:#666;font-size:14px;">Last updated: 2026-02-25</p>
 </body>
 </html>
